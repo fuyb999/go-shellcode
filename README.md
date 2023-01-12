@@ -39,7 +39,8 @@ roughly 508K.
 
 ```shell
 go build -ldflags '-s -w -L /lib/x86_64-linux-gnu/*.so -linkmode "external" -extldflags "-static"' cmd/sc/main.go
-upx  -9 --brute main
+# upx -9 --brute main
+upx -9 main
 ```
 
 Host
